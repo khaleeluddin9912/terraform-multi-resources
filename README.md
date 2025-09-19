@@ -77,22 +77,33 @@ bash
 Copy code
 cd count   # or for_each
 terraform init
+
+---
+
 2️⃣ Validate Code
 bash
 Copy code
 terraform validate
+
+---
 3️⃣ Plan Infrastructure
 bash
 Copy code
 terraform plan
+
+---
 4️⃣ Apply Changes
 bash
 Copy code
 terraform apply -auto-approve
+
+---
 5️⃣ Destroy Resources
 bash
 Copy code
 terraform destroy -auto-approve
+
+---
 🔍 Difference Between count vs for_each
 Feature	count	for_each
 Use case	Bulk resources with index	Map/dictionary based resources
@@ -100,6 +111,7 @@ Indexing	Numerical (count.index)	Key-based (each.key)
 Flexibility	Less flexible, tied to order	More flexible, stable keys
 Example	count = 2	for_each = var.subnet_map
 
+---
 📌 Outputs
 Subnet IDs are exported in the count example.
 
