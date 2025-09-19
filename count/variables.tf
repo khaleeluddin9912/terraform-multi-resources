@@ -3,5 +3,4 @@ variable "ec2_config" {
         ami           = string
         instance_type = string
     }))
-  
 }
