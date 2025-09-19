@@ -1,5 +1,4 @@
 # creating 2 subnet with count
-
 locals {
   project = "project-01"
 }
