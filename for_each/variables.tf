@@ -10,5 +10,4 @@ variable "ec2_map" {
         ami           = string
         instance_type = string
     }))
-  
 }
