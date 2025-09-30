@@ -11,6 +11,7 @@ resource "aws_vpc" "my_vpc" {
     }
 }
 
+
 # creating subnet
 resource "aws_subnet" "my_subnets" {
     vpc_id = aws_vpc.my_vpc.id
