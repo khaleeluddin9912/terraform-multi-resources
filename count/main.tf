@@ -21,7 +21,6 @@ resource "aws_subnet" "my_subnets" {
     }
 }
 
-
 # creating 4 ec2 instance 
 resource "aws_instance" "main" {
   count = length(var.ec2_config)
